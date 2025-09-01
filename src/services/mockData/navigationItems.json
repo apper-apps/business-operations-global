@@ -1,0 +1,49 @@
+[
+  {
+    "Id": 1,
+    "label": "Dashboard",
+    "icon": "LayoutDashboard",
+    "path": "/",
+    "children": []
+  },
+  {
+    "Id": 2,
+    "label": "Tasks",
+    "icon": "CheckSquare",
+    "path": "/tasks",
+    "children": [
+      {
+        "Id": 21,
+        "label": "React",
+        "icon": "Zap",
+        "path": "/tasks/react"
+      },
+      {
+        "Id": 22,
+        "label": "Maintain",
+        "icon": "Settings",
+        "path": "/tasks/maintain"
+      },
+      {
+        "Id": 23,
+        "label": "Improve",
+        "icon": "TrendingUp",
+        "path": "/tasks/improve"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "label": "Toolbox",
+    "icon": "Wrench",
+    "path": "/toolbox",
+    "children": []
+  },
+  {
+    "Id": 4,
+    "label": "Reports",
+    "icon": "FileText",
+    "path": "/reports",
+    "children": []
+  }
+]

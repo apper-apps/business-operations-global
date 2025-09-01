@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "title": "Total Tasks",
+    "value": 127,
+    "change": 12,
+    "icon": "CheckSquare",
+    "color": "#3b82f6"
+  },
+  {
+    "Id": 2,
+    "title": "Completed Tasks",
+    "value": 89,
+    "change": 8,
+    "icon": "CheckCircle2",
+    "color": "#10b981"
+  },
+  {
+    "Id": 3,
+    "title": "In Progress",
+    "value": 24,
+    "change": -3,
+    "icon": "Clock",
+    "color": "#f59e0b"
+  },
+  {
+    "Id": 4,
+    "title": "Pending Tasks",
+    "value": 14,
+    "change": 7,
+    "icon": "Circle",
+    "color": "#ef4444"
+  },
+  {
+    "Id": 5,
+    "title": "React Tasks",
+    "value": 32,
+    "change": 15,
+    "icon": "Zap",
+    "color": "#f97316"
+  },
+  {
+    "Id": 6,
+    "title": "Maintain Tasks",
+    "value": 58,
+    "change": -2,
+    "icon": "Settings",
+    "color": "#2563eb"
+  },
+  {
+    "Id": 7,
+    "title": "Improve Tasks",
+    "value": 37,
+    "change": -1,
+    "icon": "TrendingUp",
+    "color": "#16a34a"
+  },
+  {
+    "Id": 8,
+    "title": "Team Members",
+    "value": 12,
+    "change": 0,
+    "icon": "Users",
+    "color": "#8b5cf6"
+  }
+]
