@@ -23,16 +23,15 @@ const NavigationItem = ({ item, isCollapsed }) => {
               <span className="ml-3 truncate">{item.label}</span>
             </>
           )}
-        </div>
-{!isCollapsed && (
+</div>
+        {!isCollapsed && (
           <div className="ml-8 space-y-1">
-{item.children?.map((child, index) => {
+            {item.children?.map((child, index) => {
               // Generate consistent key for React reconciliation
               const childKey = child?.id || child?.path || `${item?.id || 'nav'}-child-${index}`;
               
               return (
                 <NavLink
-                  key={childKey}
                   key={childKey}
                   to={child?.path || '#'}
                   className={({ isActive }) =>
