@@ -25,10 +25,10 @@ const NavigationItem = ({ item, isCollapsed }) => {
           )}
         </div>
         {!isCollapsed && (
-          <div className="ml-8 space-y-1">
-            {item.children.map((child) => (
+<div className="ml-8 space-y-1">
+            {item.children.map((child, index) => (
               <NavLink
-                key={child.id}
+                key={child.id || `child-${index}`}
                 to={child.path}
                 className={({ isActive }) =>
                   `flex items-center px-3 py-2 text-sm rounded-lg transition-colors ${
