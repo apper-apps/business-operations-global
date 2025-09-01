@@ -50,8 +50,8 @@ const TaskList = ({ category }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        {tasks.map((task, index) => (
-          <TaskCard key={task.Id} task={task} index={index} />
+{tasks.map((task, index) => (
+          <TaskCard key={task.id || task.Id || `task-${index}`} task={task} index={index} />
         ))}
       </motion.div>
     </div>
