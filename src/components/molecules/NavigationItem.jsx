@@ -24,23 +24,28 @@ const NavigationItem = ({ item, isCollapsed }) => {
             </>
           )}
         </div>
-        {!isCollapsed && (
-<div className="ml-8 space-y-1">
-{item.children?.map((child, index) => (
-              <NavLink
-                key={child.id || child.path || `${item.id}-child-${index}`}
-                to={child.path}
-                className={({ isActive }) =>
-                  `flex items-center px-3 py-2 text-sm rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-primary-600 text-white"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                  }`
-                }
-              >
-                <span className="truncate">{child?.label || 'Navigation Item'}</span>
-              </NavLink>
-            )) || null}
+{!isCollapsed && (
+          <div className="ml-8 space-y-1">
+            {item.children?.map((child, index) => {
+              // Generate consistent key for React reconciliation
+              const childKey = child?.id || child?.path || `${item?.id || 'nav'}-child-${index}`;
+              
+              return (
+                <NavLink
+                  key={childKey}
+                  to={child?.path || '#'}
+                  className={({ isActive }) =>
+                    `flex items-center px-3 py-2 text-sm rounded-lg transition-colors ${
+                      isActive
+                        ? "bg-primary-600 text-white"
+                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                    }`
+                  }
+                >
+                  <span className="truncate">{child?.label || 'Navigation Item'}</span>
+                </NavLink>
+              );
+            }) || null}
           </div>
         )}
       </div>
